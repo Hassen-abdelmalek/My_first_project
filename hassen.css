@@ -1,0 +1,476 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #f0f0f0d1;
+    width: 100%;
+    box-shadow: 0px 4px 15px 4px grey;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 800;
+    /* animation-name: hassan;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out; */
+
+}
+
+/* @keyframes hassan {
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 30px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+} */
+
+.links a {
+    text-decoration: none;
+    padding-left: 30px;
+    color: #465377d0;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.links a:hover {
+    color: #4a00f8;
+}
+
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: url(image/Le-fleuve-Colorado-vu-de-Dead-Horse-Point.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main .center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main h2 {
+    color: #f0f0f0;
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.main span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4a00f8;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.main h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #f0f0f0;
+    font-size: 1.9em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.main .botton {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #4a00f8;
+    color: #f0f0f0;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 15px 62px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.main .botton:hover {
+    background-color: #f0f0f0;
+    color: #4a00f8;
+    font-size: 1.2em;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.main .icon {
+    display: inline-block;
+    /* margin-top: 10px; */
+}
+
+.fa-facebook,
+.fa-github-square,
+.fa-envelope,
+.fa-linkedin {
+    font-size: 1.5em;
+    background-color: black;
+    padding: 11px;
+    border-radius: 31px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+}
+
+.main .icon a {
+    color: #f0f0f0;
+    font-size: 1.5em;
+}
+
+.main .icon a:hover i {
+    color: orangered;
+}
+
+.photo {
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+    transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+.photo:hover {
+    width: 400px;
+    height: 230px;
+    background-size: cover;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.ser {
+    display: flex;
+    justify-content: center;
+    color: #4a00f8;
+    font-size: 1.9em;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.card {
+    background-color: #4a00f8;
+    color: #f0f0f0;
+    padding: 20px;
+    margin: 15px;
+    width: 21.25em;
+    box-shadow: 17px 20px 31px 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: transform 0.7s;
+    -webkit-transition: transform 0.7s;
+    -moz-transition: transform 0.7s;
+    -ms-transition: transform 0.7s;
+    -o-transition: transform 0.7s;
+}
+
+.card:hover {
+    background-color: orangered;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.card .icon-carde {
+    font-size: 7em;
+    color: #f0f0f0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contaner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.card .title-carde {
+    color: yellow;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.card .inf {
+    text-align: center;
+    color: #f0f0f0;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.proj {
+    background-color: orange;
+}
+
+.proj .ser {
+    color: blanchedalmond;
+}
+
+.proj .project-card {
+    background-color: #f0f0f0;
+    width: 21.25em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    margin: 20px;
+    box-shadow: 10px 13px 20px 7px #403c3c;
+    transition: transform 0.7s;
+    -webkit-transition: transform 0.7s;
+    -moz-transition: transform 0.7s;
+    -ms-transition: transform 0.7s;
+    -o-transition: transform 0.7s;
+}
+
+.project-card:hover {
+    color: black;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.project-card .image-pro img {
+    width: 100%;
+}
+
+.project-card:hover .image-pro {
+    opacity: 0.9;
+}
+
+.inform {
+    padding: 1em;
+}
+
+.inform p {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.inform strong {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.inform strong a {
+    text-decoration: none;
+}
+
+.inform strong a:hover {
+    color: #4a00f8;
+}
+
+
+.contact {
+    background-color: #fff;
+}
+
+.contact .ser {
+    color: #4a00f8;
+    text-shadow: 1px 2px 2px #1f1c1c;
+}
+
+.contact .card {
+    background-color: #fff;
+    width: 26em;
+    box-shadow: 1px 2px 20px 2px #1f1c1c;
+}
+
+.contact .fa-pen-to-square {
+    color: #4a00f8;
+}
+
+.contact .title-carde {
+    color: #1f1c1c;
+}
+
+.contact .inf {
+    color: #1f1c1c;
+}
+
+footer {
+    padding: 100px 200px;
+    background-color: #1f1c1c;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot p {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/* .fa-brands,
+.fa-solid {
+    animation-name: up;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes up {
+    to {
+        transform: translateY(-40px);
+        -webkit-transform: translateY(-40px);
+        -moz-transform: translateY(-40px);
+        -ms-transform: translateY(-40px);
+        -o-transform: translateY(-40px);
+}
+}
+
+.fa-github-square,
+.fa-linkedin {
+    animation-delay: 1.2s;
+} */
+
+::selection {
+    background-color: #1f1c1c;
+    color: yellow;
+}
+
+@media(max-width:768px) {
+    header {
+        padding: 5px 20px;
+    }
+
+    .links a {
+        padding-left: 5px;
+    }
+
+    .logo {
+        font-size: 1.4em;
+    }
+
+    section {
+        padding: 20px 20px;
+    }
+
+    footer {
+        padding: 5px 20px;
+    }
+
+    .ser {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .main h3 {
+        font-size: 1.3em;
+    }
+
+    .fa-facebook,
+    .fa-github-square,
+    .fa-envelope,
+    .fa-linkedin {
+        font-size: 1.1em;
+    }
+
+    .foot p {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .photo:hover{
+        width: 300px;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    header {
+        padding: 10px 70px;
+    }
+
+    .links a {
+        padding-left: 10px;
+    }
+
+    .logo {
+        font-size: 1.6em;
+    }
+
+    section {
+        padding: 5px 70px;
+    }
+
+    footer {
+        padding: 5px 70px;
+    }
+
+}
